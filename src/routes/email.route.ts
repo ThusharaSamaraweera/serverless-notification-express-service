@@ -3,7 +3,7 @@ import * as nodemailer from "nodemailer";
 
 const router = Router();
 
-router.get("/", async (req: Request, res: Response) => {
+router.post("/", async (req: Request, res: Response) => {
   const emailInput: EmailInput = req.body;
 
   console.log(`emailInput: ${JSON.stringify(emailInput)}`);
