@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "deploy": "serverless deploy --stage dev --verbose",
-    "deploy:func": "npm run build && serverless deploy --stage dev --function app --verbose"
+    "deploy": "serverless deploy --stage dev --function app --verbose"
   },
   "author": "",
   "license": "ISC",
